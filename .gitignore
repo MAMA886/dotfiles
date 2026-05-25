@@ -1,22 +1,46 @@
-# Claude Code 配置文件
-# 只追踪核心配置，排除自动生成的文件
+# ──────────────────────────────────
+# 小圆的 dotfiles 仓库 — 默认忽略所有，只追踪指定文件
+# 这是用户目录级 Git 仓库的标准做法
+# ──────────────────────────────────
 
-# 排除自动生成/缓存
-.claude/backups/
-.claude/cache/
-.claude/file-history/
-.claude/projects/
-.claude/plugins/
-.claude/telemetry/
-.claude/.last-cleanup
-.claude/ide/
-.claude/shell-snapshots/
+# 1. 默认忽略一切
+*
 
-# 排除含 API Key 的目录
-.cc-switch/
-.claude-code-router/
+# 2. 白名单：允许追踪的目录/文件（逐级放行）
+# .claude 核心配置
+!.claude/
+.claude/*
+!.claude.json
+!.claude/settings.json
+!.claude/settings.local.json
+!.claude/keybindings.json
+!.claude/CLAUDE.md
 
-# 个人敏感文件
-.git-credentials
-.claude/compact_xiangxiang.txt
-.claude/compact_xiangxiang_v2.txt
+# .claude 子目录 — 只放行手动编写的脚本和 memory
+!.claude/projects/
+.claude/projects/*
+!.claude/projects/C--Users-Administrator/
+.claude/projects/C--Users-Administrator/*
+!.claude/projects/C--Users-Administrator/memory/
+.claude/projects/C--Users-Administrator/memory/*
+!.claude/projects/C--Users-Administrator/memory/*.md
+
+# .claude 自定义脚本
+!.claude/clauditor_cn.py
+!.claude/ocr_screenshot.py
+!.claude/create_new_xiaoyuan.ps1
+
+# VS Code 使用技巧
+!.claude/vscode使用技巧.md
+
+# .clauditor 配置
+!.clauditor/
+.clauditor/*
+!.clauditor/config.json
+
+# .gitignore 自身
+!.gitignore
+
+# ──────────────────────────────────
+# 注意：新增文件需要手动追加白名单规则
+# ──────────────────────────────────

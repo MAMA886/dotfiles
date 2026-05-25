@@ -1,14 +1,11 @@
 {
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4-5",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "deepseek-v4-flash",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-7",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "deepseek-v4-pro",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4-6",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "deepseek-v4-pro",
-    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "80000"
+    "ANTHROPIC_AUTH_TOKEN": "[已删除-旧DeepSeek-Key]",
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro"
   },
   "includeCoAuthoredBy": false,
   "permissions": {
@@ -37,98 +34,17 @@
       "Grep(*)",
       "WebSearch(*)",
       "WebFetch(*)",
-      "Bash(cmd //c \"dir /s /b C:\\\\Users\\\\Administrator\\\\Desktop\\\\*快车* 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\Desktop\\\\*wjkc* 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\Desktop\\\\*VPN* 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\Desktop\\\\*网际* 2>nul\")",
-      "Bash(cmd //c \"reg query HKCU\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Uninstall /s 2>nul | findstr /i DisplayName | findstr /i -E \"快车)",
-      "Bash(网际)",
-      "Bash(wjkc)",
-      "Bash(fast\"\")",
-      "Bash(cmd //c \"dir H:\\\\ZZZ /b\")",
-      "Bash(cmd //c \"dir H:\\\\ZZZ\\\\FlClash /b\")",
-      "Bash(cmd //c \"dir H:\\\\AAAA /b\")",
-      "Bash(cmd //c \"start \\\\\"\\\\\" \\\\\"H:\\\\ZZZ\\\\FlClash\\\\FlClash.exe\\\\\"\")",
-      "Bash(cmd //c \"dir /s /b C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\FlClash 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\AppData\\\\Roaming\\\\FlClash 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\.flclash 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\flclash 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\com.flclash 2>nul & dir /s /b C:\\\\Users\\\\Administrator\\\\AppData\\\\Roaming\\\\com.flclash 2>nul\")",
-      "Bash(git --version)",
-      "Bash(docker --version)",
-      "Bash(gh auth *)",
-      "Bash(npm --version)",
-      "Bash(reg query *)",
       "Bash(sqlite3 \"C:\\\\Users\\\\Administrator\\\\.cc-switch\\\\cc-switch.db\" \".tables\")",
-      "Bash(sqlite3 \"C:\\\\Users\\\\Administrator\\\\.cc-switch\\\\cc-switch.db\" \"SELECT * FROM proxy_config;\")",
-      "Bash(cmd //c start \"\" \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Programs\\\\CC Switch\\\\cc-switch.exe\")",
-      "Bash(python *)",
-      "Bash(sqlite3 *)",
-      "PowerShell(cd C:\\\\Users\\\\Administrator; Get-ChildItem \".claude/projects/C--Users-Administrator/memory\" -ErrorAction SilentlyContinue | ForEach-Object { $_.Name })"
-    ],
-    "additionalDirectories": [
-      "C:\\Users\\Administrator"
-    ]
-  },
-  "hooks": {
-    "PostCompact": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "clauditor hook post-compact"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "clauditor hook post-tool-use"
-          }
-        ]
-      }
-    ],
-    "PreCompact": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "clauditor hook pre-compact"
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "clauditor hook session-start"
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "clauditor hook stop"
-          }
-        ]
-      }
-    ],
-    "UserPromptSubmit": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "clauditor hook user-prompt-submit"
-          }
-        ]
-      }
+      "Bash(Select-Object -First 20)",
+      "Bash(cmd //c \"curl -s http://127.0.0.1:5353 2>&1\")",
+      "Bash(cmd //c \"curl -s http://127.0.0.1:5353/configs 2>&1\")",
+      "Bash(cmd //c \"curl -v http://127.0.0.1:8830 2>&1\")",
+      "Bash(cmd //c \"curl -v http://127.0.0.1:7890 2>&1\")",
+      "Bash(cmd //c \"netstat -ano | findstr 13816\")",
+      "Bash(cmd //c \"netstat -ano | findstr 2984\")",
+      "Bash(cmd //c \"curl -s -H \\\\\"Accept: application/json\\\\\" http://127.0.0.1:5353/version 2>&1 & curl -s -H \\\\\"Accept: application/json\\\\\" http://127.0.0.1:5353/proxies 2>&1 & curl -s http://127.0.0.1:5353 2>&1\")",
+      "Bash(cmd //c \"forfiles /p H:\\\\ZZZ\\\\FlClash /s /d +2026/05/25 /c \\\\\"cmd /c if @isdir==FALSE echo @fdate @ftime @path\\\\\"\")",
+      "Bash(cmd //c \"python -c \\\\\"import urllib.request; import json; ports=[5353,7890,8830,9090,9097]; [\\(lambda p: print\\(f'Port {p}: ' + \\(lambda r: str\\(r.status\\) + ' ' + r.read\\(\\).decode\\(\\)[:500] if r.status else 'fail'\\)\\(lambda: urllib.request.urlopen\\(f'http://127.0.0.1:{p}', timeout=3\\)\\)\\(\\)\\)\\)\\(p\\) for p in ports]\\\\\"\")"
     ]
   },
   "language": "Chinese"
