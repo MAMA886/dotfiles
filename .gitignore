@@ -1,0 +1,22 @@
+# Claude Code 配置文件
+# 只追踪核心配置，排除自动生成的文件
+
+# 排除自动生成/缓存
+.claude/backups/
+.claude/cache/
+.claude/file-history/
+.claude/projects/
+.claude/plugins/
+.claude/telemetry/
+.claude/.last-cleanup
+.claude/ide/
+.claude/shell-snapshots/
+
+# 排除含 API Key 的目录
+.cc-switch/
+.claude-code-router/
+
+# 个人敏感文件
+.git-credentials
+.claude/compact_xiangxiang.txt
+.claude/compact_xiangxiang_v2.txt

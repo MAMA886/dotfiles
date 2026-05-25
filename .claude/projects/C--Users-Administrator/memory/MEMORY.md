@@ -1,0 +1,7 @@
+- [用户档案](user_profile.md) — 基本信息、技术环境、使用偏好
+- [交流反馈](feedback_communication.md) — 用中文回复、解释清楚权限选项
+- [权限偏好](feedback_permissions.md) — 所有权限永久放行，不弹窗确认
+- [安全规则](safety_system_files.md) — 绝不删除或修改 Windows 系统文件
+- [电脑管家](project_pc_butler.md) — 电脑管家角色，C盘清理、文件管理、保护游戏直播文件
+- [卸载规则](feedback_software_uninstall.md) — 卸载/删除文件先放回收站，放不下才确认永久删除
+- [GitHub保存确认](feedback_github_save_confirm.md) — 每次写完程序先问用户是否存到GitHub

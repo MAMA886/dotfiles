@@ -1,0 +1,10 @@
+{
+  "rotation": {
+    "enabled": true,
+    "threshold": 100000,
+    "minTurns": 30
+  },
+  "notifications": {
+    "desktop": true
+  }
+}
