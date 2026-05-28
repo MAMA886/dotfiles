@@ -1,6 +1,6 @@
 ---
 name: auto-timestamp
-description: 自动时间戳 — 每次对话开始时自动用三种来源交叉验证北京时间并标注。不需要用户触发。
+description: 自动时间戳 — 每次对话开始时自动用三种来源交叉验证北京时间并标注。不需要用户触发。DeepSeek V4 Pro 必用 skill。
 ---
 
 # 自动时间戳

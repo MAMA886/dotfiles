@@ -1,6 +1,6 @@
 ---
 name: latest-search
-description: 最新搜索 — 每次搜索问题时自动搜遍全网（含GitHub）并截止到当前北京时间。用户不需要每次说"搜最新的"。
+description: 最新搜索 — 每次搜索问题时自动搜遍全网（含GitHub）并截止到当前北京时间。用户不需要每次说"搜最新的"。DeepSeek V4 Pro 必用 skill。
 ---
 
 # 最新搜索
