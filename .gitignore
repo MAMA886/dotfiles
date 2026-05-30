@@ -38,13 +38,10 @@
 !.claude/ocr_screenshot.py
 !.claude/create_new_xiaoyuan.ps1
 !.claude/vision_bridge.py
-!.claude/switch_model.py
-!.claude/auto_ask_model.py
-# ⚠️ deepseek_config.json 含 key，绝不追踪
-
-# .claude 切换模型 bat
-!.claude/切回DeepSeek.bat
-!.claude/切回Claude订阅.bat
+# ⚠️ 以下含 key，绝不追踪
+#   .claude/switch_model.py
+#   .claude/auto_ask_model.py
+#   .claude/deepseek_config.json
 
 # VS Code 使用技巧
 !.claude/vscode使用技巧.md
