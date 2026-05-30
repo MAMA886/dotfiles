@@ -10,11 +10,12 @@
 # .claude 核心配置
 !.claude/
 .claude/*
-!.claude.json
-!.claude/settings.json
-!.claude/settings.local.json
 !.claude/keybindings.json
 !.claude/CLAUDE.md
+# ⚠️ 安全：以下文件含明文 API key / token，绝不追踪
+#   .claude.json（账户配置）
+#   .claude/settings.json（含 DeepSeek/Anthropic key）
+#   .claude/settings.local.json（含 GitHub token ghp_）
 
 # .claude 子目录 — 只放行手动编写的脚本和 memory
 !.claude/projects/
